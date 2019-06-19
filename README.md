@@ -1,2 +1,2 @@
-# delete-barreiras
-Jogo Educacional delete(barreiras)
+# delete(barreiras)
+Jogo educacional desenvolvido durante o Programa Generation.
