@@ -1,0 +1,9 @@
+CREATE DATABASE jogo;
+USE jogo;
+
+CREATE TABLE quiz (
+	id INTEGER NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255),
+    tema VARCHAR(255),
+    PRIMARY KEY (id)
+);
