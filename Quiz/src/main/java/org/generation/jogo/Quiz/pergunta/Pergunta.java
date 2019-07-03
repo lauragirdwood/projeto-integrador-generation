@@ -1,11 +1,10 @@
 package org.generation.jogo.Quiz.pergunta;
 
 import lombok.Data;
+import org.generation.jogo.Quiz.QuizApplication;
+import org.generation.jogo.Quiz.quiz.Quiz;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Data
@@ -16,9 +15,9 @@ public class Pergunta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_pergunta;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_quiz;
+    @ManyToOne
+    @JoinColumn(name = "id_quiz")
+    private Quiz id_quiz;
 
     @NotNull
     private Integer numero;
