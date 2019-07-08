@@ -1,0 +1,116 @@
+body {
+    background: rgb(53, 49, 49);
+}
+
+.button {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 5px solid rgb(255, 0, 127);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    background-color: rgb(53, 49, 49);
+    height: 800px;
+}
+
+#text {
+    color: white; 
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header {
+    height: 130px;
+}
+
+#cont-questao {
+    color: white;
+    margin: 20px;
+}
+
+#assunto {
+    color: white;
+}
+
+#num-questao {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#enunciado {
+    color: white;
+    font-size: 19px;
+    margin: 20px;
+}
+
+.button1 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 7px solid rgb(255, 131, 0);
+    border-radius: 10px;
+    width: 70%;
+    height: 3em;
+}
+
+.button2 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 7px solid #ff073a;
+    border-radius: 10px;
+    width: 70%;
+    height: 3em;
+}
+
+.button3 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 7px solid #cfff04;
+    border-radius: 10px;
+    width: 70%;
+    height: 3em;
+}
+
+.button4 {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 7px solid #fe019a;
+    border-radius: 10px;
+    width: 70%;
+    height: 3em;
+}
+
+.button-send {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(53, 49, 49); 
+    border: 7px solid #0add08;
+    border-radius: 10px;
+    width: 30%;
+    height: 3em;
+}
+
+.line-one {
+    margin: 20px;
+}
+
+.line-two {
+    margin: 20px;
+}
+
+.line-three {
+    margin: 5px;
+}
+
