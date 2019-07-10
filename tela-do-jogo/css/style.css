@@ -12,9 +12,10 @@ body {
     margin-left: 10px;
 }
 
-.container {
+.main-page {
     background-color: rgb(53, 49, 49);
-    height: 800px;
+    height: 100%;
+    width: 100%;
 }
 
 #text {
