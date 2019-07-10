@@ -4,10 +4,10 @@ body {
 
 .button {
     font-size: 20px;
-    color: white;
+    color: #ff8106;
     background-color: rgb(53, 49, 49); 
-    border: 5px solid rgb(255, 0, 127);
-    border-radius: 10px;
+    border: 1px solid rgb(53, 49, 49);
+    border-radius: 3px;
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 #text {
-    color: white; 
+    color: #ff8106; 
 }
 
 #logo {
@@ -57,7 +57,7 @@ header {
     font-size: 20px;
     color: white;
     background-color: rgb(53, 49, 49); 
-    border: 7px solid rgb(255, 131, 0);
+    border: 3px solid #ff8106;
     border-radius: 10px;
     width: 70%;
     height: 3em;
@@ -66,8 +66,9 @@ header {
 .button2 {
     font-size: 20px;
     color: white;
-    background-color: rgb(53, 49, 49); 
-    border: 7px solid #ff073a;
+    background-color: #ff8106; 
+    opacity: 0.9;
+    border: 3px solid #ff8106;
     border-radius: 10px;
     width: 70%;
     height: 3em;
@@ -77,7 +78,7 @@ header {
     font-size: 20px;
     color: white;
     background-color: rgb(53, 49, 49); 
-    border: 7px solid #cfff04;
+    border: 3px solid #ff8106;
     border-radius: 10px;
     width: 70%;
     height: 3em;
@@ -87,20 +88,16 @@ header {
     font-size: 20px;
     color: white;
     background-color: rgb(53, 49, 49); 
-    border: 7px solid #fe019a;
+    border: 3px solid #ff8106;
     border-radius: 10px;
     width: 70%;
     height: 3em;
 }
 
 .button-send {
-    font-size: 20px;
-    color: white;
-    background-color: rgb(53, 49, 49); 
-    border: 7px solid #0add08;
-    border-radius: 10px;
-    width: 30%;
-    height: 3em;
+    color:#ff8106; 
+    background-color:rgb(53, 49, 49);
+    font-size: 50px;
 }
 
 .line-one {

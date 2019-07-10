@@ -14,7 +14,7 @@
 }
 
 body div header nav ul li a {
-    color: white;
+    color: greenyellow;
 }
 
 body div header nav ul li {
@@ -39,7 +39,7 @@ d
 }
 
 .titulo {
-    color: rgb(53, 49, 49);
+    color: white;
     margin: 0.5em;
 }
 
@@ -64,4 +64,6 @@ footer nav {
 .li-footer{
     list-style: none;
 }
-
+ body {
+     background-color: black;
+ }
