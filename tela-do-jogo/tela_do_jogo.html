@@ -13,7 +13,7 @@
     <div class="main-page container-fluid">
         <header class="row">
             <div class="col-md-2 back-to-menu align-items-start">
-                <button class="button" type="menu">back to menu</button>
+                <a class="button" href="../tela-home/home.html">back to menu</a>
             </div>
             <div class="col-md-8 d-flex justify-content-center align-items-end">
                 <h1 id="text">Lógica de Programação</h1>
@@ -51,11 +51,11 @@
                     <div class="col-md-1"></div>
 
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
-                        <button class="button1" type="submit">ANSWER ONE</button>
+                        <button id="btn1" onclick="myFunction1()" class="button1" type="submit">ANSWER ONE</button>
                     </div>
                     
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
-                        <button class="button2" type="submit">ANSWER TWO</button>
+                        <button id="btn2" onclick="myFunction2()" class="button2" type="submit">ANSWER TWO</button>
                     </div>
 
                     <div class="col-md-1"></div>
@@ -65,18 +65,53 @@
                     <div class="col-md-1"></div>
         
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
-                        <button class="button3" type="submit">ANSWER THREE</button>
+                        <button id="btn3" onclick="myFunction3()" class="button3" type="submit">ANSWER THREE</button>
                     </div>
                         
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
-                        <button class="button4" type="submit">ANSWER FOUR</button>
+                        <button id="btn4" onclick="myFunction4()" class="button4" type="submit">ANSWER FOUR</button>
                     </div>
         
                     <div class="col-md-1"></div>
-                </div>>
+
+                    <script>
+                        function myFunction1() {
+                            document.getElementById("btn1").style.backgroundColor = "#ff8106";
+                            document.getElementById("btn2").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn3").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn4").style.backgroundColor = "rgb(53, 49, 49)";
+
+                        }
+                        function myFunction2() {
+                            document.getElementById("btn2").style.backgroundColor = "#ff8106";
+                            document.getElementById("btn1").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn3").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn4").style.backgroundColor = "rgb(53, 49, 49)";
+                        }
+                        function myFunction3() {
+                            document.getElementById("btn3").style.backgroundColor = "#ff8106";
+                            document.getElementById("btn1").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn2").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn4").style.backgroundColor = "rgb(53, 49, 49)";
+                        }
+                        function myFunction4() {
+                            document.getElementById("btn4").style.backgroundColor = "#ff8106";
+                            document.getElementById("btn1").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn2").style.backgroundColor = "rgb(53, 49, 49)";
+                            document.getElementById("btn3").style.backgroundColor = "rgb(53, 49, 49)";
+                        }
+                        
+                        function valida() {
+                            if (document.getElementById(btn1).clicked == false) {
+                                alert("Você não selecionou nenhum botão");
+                            }
+                        }
+
+                    </script>
+                </div>
 
                 <div class="d-flex line-three justify-content-center align-items-center">
-                    <a class="button-send" href=""><i class="fas fa-play"></i></a>
+                    <a onclick="valida()" class="button-send" href="../feed-back-jogo/feed-back.html"><i class="fas fa-play"></i></a>
                 </div>
 
             </section>
