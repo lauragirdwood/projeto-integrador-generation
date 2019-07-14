@@ -1,0 +1,17 @@
+.orange-color {
+    color: #ff8106;
+}
+
+.border-orange {
+    border: 2px solid #ff8106;
+    height: 30em;
+    border-radius: 10px;
+}
+
+.button-submit {
+    background-color: #ff8106;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px; 
+}
