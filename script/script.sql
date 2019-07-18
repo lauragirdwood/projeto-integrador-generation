@@ -18,6 +18,7 @@ CREATE TABLE pergunta (
     FOREIGN KEY (id_quiz) REFERENCES quiz(id_quiz)
 );
 
+<<<<<<< HEAD
 
 CREATE TABLE resultado (
     id_resultado INTEGER NOT NULL AUTO_INCREMENT,
@@ -31,4 +32,14 @@ CREATE TABLE resultado (
     FOREIGN KEY (id_pergunta) REFERENCES pergunta(id_pergunta),
     FOREIGN KEY (id_resposta) REFERENCES resposta(id_resposta),
     FOREIGN KEY (id_jogador) REFERENCES jogadore(id_jogador)
+=======
+CREATE TABLE resposta(
+id_resposta INTEGER NOT NULL AUTO_INCREMENT,
+id_pergunta INTEGER NOT NULL,
+alternativa VARCHAR(2) NOT NULL,
+descricao TEXT NOT NULL,
+certa BOOLEAN NOT NULL,
+PRIMARY KEY (id_resposta),
+FOREIGN KEY (id_pergunta) REFERENCES pergunta(id_pergunta)
+>>>>>>> 542e0244dee1042a071f3e7277496d7b6d4aa09f
 );
