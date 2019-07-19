@@ -18,5 +18,7 @@ public class Quiz {
     @NotNull
     private String nome;
 
-    @NotNull private String tema;
+    @NotNull
+    private String tema;
+
 }
