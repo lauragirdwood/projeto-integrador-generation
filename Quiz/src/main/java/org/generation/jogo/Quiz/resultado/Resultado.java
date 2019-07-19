@@ -1,6 +1,6 @@
 package org.generation.jogo.Quiz.resultado;
 
-import lombok.AllArgsConstructor;
+/* import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.generation.jogo.Quiz.pergunta.Pergunta;
@@ -43,4 +43,4 @@ public class Resultado {
     @NotBlank
     private Boolean completo;
 
-}
+} */

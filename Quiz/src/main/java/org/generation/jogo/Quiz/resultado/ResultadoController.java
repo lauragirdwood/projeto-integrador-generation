@@ -1,6 +1,6 @@
 package org.generation.jogo.Quiz.resultado;
 
-import org.generation.jogo.Quiz.exception.ResourceNotFoundException;
+/*import org.generation.jogo.Quiz.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,4 +40,4 @@ public class ResultadoController {
         resultadoRepository.deleteById(id_resultado);
     }
 }
-
+ */
