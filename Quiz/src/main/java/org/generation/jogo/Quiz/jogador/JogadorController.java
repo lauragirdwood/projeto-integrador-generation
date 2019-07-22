@@ -39,7 +39,6 @@ public class JogadorController {
     public Jogador update (@PathVariable Long id_jogador, @RequestBody Jogador jogador) throws ResourceNotFoundException {
         return jogadorRepository.findById(id_jogador).map(j -> {
             j.setNome(jogador.getNome());
-            j.setFoto_url(jogador.getFoto_url());
             j.setNivel(jogador.getNivel());
             j.setPontuacao(jogador.getPontuacao());
             return jogadorRepository.save(j);

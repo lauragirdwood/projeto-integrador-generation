@@ -40,3 +40,21 @@ CREATE TABLE resposta(
     PRIMARY KEY (id_resposta),
     FOREIGN KEY (id_pergunta) REFERENCES pergunta(id_pergunta)
 );
+
+CREATE TABLE jogador (
+id_jogador INTEGER NOT NULL AUTO_INCREMENT,
+id_usuario INTEGER NOT NULL,
+nome VARCHAR(255) NOT NULL,
+foto_url VARCHAR(255),
+pontuacao INTEGER NOT NULL,
+nivel INTEGER NOT NULL
+PRIMARY KEY (id_jogador),
+FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+);
+
+CREATE TABLE usuario (
+id_usuario INTEGER NOT NULL AUTO_INCREMENT,
+username VARCHAR(50) NOT NULL,
+senha VARCHAR(100) NOT NULL,
+PRIMARY KEY (id_usuario)
+);

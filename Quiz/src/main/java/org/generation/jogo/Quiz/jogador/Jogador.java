@@ -3,6 +3,7 @@ package org.generation.jogo.Quiz.jogador;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.generation.jogo.Quiz.usuario.Usuario;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -13,16 +14,10 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @Table (name = "jogador", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
-                "id_jogador"
-        }),
-        @UniqueConstraint(columnNames = {
                 "id_usuario"
         }),
         @UniqueConstraint(columnNames = {
                 "nome"
-        }),
-        @UniqueConstraint(columnNames = {
-                "foto_url"
         }),
         @UniqueConstraint(columnNames = {
                 "pontuacao"
@@ -40,19 +35,15 @@ public class Jogador {
 
     @OneToOne
     @JoinColumn(name = "id_usuario")
-    private Long id_usuario;
+    private Usuario id_usuario;
 
     @NotNull
     private String nome;
-
-    @NotNull
-    private String foto_url;
 
     @NotNull
     private Integer pontuacao;
 
     @NotNull
     private Integer nivel;
-
 
 }
